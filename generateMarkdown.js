@@ -4,7 +4,7 @@ function generateMarkdown(data) {
 
   ### ${data.description}
 
-  ![](https://img.shields.io/badge/license-${data.license}-blue)
+  ![](https://img.shields.io/badge/dynamic/json?url=<URL>License=<LABEL>&query=${data.license}&color=blue&prefix=<PREFIX>&suffix=<SUFFIX>)
 
   # Table of Contents
   
