@@ -44,7 +44,8 @@ function generateMarkdown(data) {
 
   ${data.contribute}
 
-  <img src = ${data.avatar_url}></img>
+  ![profile-image](${data.avatar_url}) 
+  This Read-Me was created by <a>${data.email}</a> reach out if you have any questions about this project. 
   `;
   }
   

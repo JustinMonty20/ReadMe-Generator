@@ -63,7 +63,7 @@ const init = () => {
     axios.get('https://api.github.com/users/' + response.username)
         .then(({data}) => {
            // console.log(response)
-            writeToFile("generate.md", make({...data, ...response}),err=>{
+            writeToFile("generate.md", make({...data, ...response}),err => { 
                 if(err) throw err
                 console.log('...saving')
             })
