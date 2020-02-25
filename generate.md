@@ -1,9 +1,9 @@
 
   # nothing
 
-  ### nothing
+  ### yes
 
-  ![]("https://img.shields.io/badge/license-MIT-blue")
+  ![](https://img.shields.io/badge/dynamic/json?url=<URL>License=<LABEL>&query=MIT&color=blue&prefix=<PREFIX>&suffix=<SUFFIX>)
 
   # Table of Contents
   
@@ -32,14 +32,15 @@
 
   # Usage
 
-  
+  nothing
 
   # License
 
-  ISC
+  MIT
 
   # Contributing 
 
-  
+  nothing
+
  ![]()
   
