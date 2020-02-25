@@ -1,9 +1,9 @@
 
-  # nothing
+  # nope
 
-  ### nope
+  ### 
 
-  ![](https://img.shields.io/license/MIT/apistatus.svg)
+  ![shield](https://img.shields.io/badge/license-ISC-blue)
 
   # Table of Contents
   
@@ -36,11 +36,11 @@
 
   # License
 
-  MIT
+  ISC
 
   # Contributing 
 
   
 
- ![]()
+  <img src = https://avatars0.githubusercontent.com/u/54275962?v=4></img>
   

@@ -1,10 +1,11 @@
 function generateMarkdown(data) {
+  console.log(data)
     return `
   # ${data.title}
 
   ### ${data.description}
 
-  ![](https://img.shields.io/license/${data.license}/apistatus.svg)
+  ![shield](https://img.shields.io/badge/license-${data.license}-blue)
 
   # Table of Contents
   
@@ -43,9 +44,9 @@ function generateMarkdown(data) {
 
   ${data.contribute}
 
- ![]()
+  <img src = ${data.avatar_url}></img>
   `;
   }
   
-  module.exports = {generateMarkdown: generateMarkdown};
+  module.exports = generateMarkdown
   

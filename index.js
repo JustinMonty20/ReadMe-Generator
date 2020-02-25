@@ -33,7 +33,6 @@ let questions = [{
     choices: [
         "ISC",
         "MIT",
-        "Apache 2.0",
         "BSD",
         "GPLv3"
     ],
@@ -60,12 +59,16 @@ let questions = [{
 const init = () => {
     inquirer.prompt(questions) 
    
-.then(data => {
-    axios.get('https://api.github.com/users/' + data.username)
-        .then(response => {
-            console.log(response)
+.then(response => {
+    axios.get('https://api.github.com/users/' + response.username)
+        .then(({data}) => {
+           // console.log(response)
+            writeToFile("generate.md", make({...data, ...response}),err=>{
+                if(err) throw err
+                console.log('...saving')
+            })
+            
         })
-    writeToFile("generate.md", make.generateMarkdown(data))
 })
 }
 
