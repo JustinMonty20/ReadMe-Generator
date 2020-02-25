@@ -1,0 +1,23 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "generates a readMe",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinMonty20/ReadMe-Generator.git"
+  },
+  "author": "Justin Montgomery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinMonty20/ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/JustinMonty20/ReadMe-Generator#readme"
+}
