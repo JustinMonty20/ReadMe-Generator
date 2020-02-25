@@ -1,8 +1,9 @@
-var inquirer = require("inquirer")
-var make = require("./generateMarkdown")
-var fs = require("fs")
+const inquirer = require("inquirer")
+const make = require("./generateMarkdown")
+const axios = require("axios")
+const fs = require("fs")
 
-function writeToFile(fileName, data) {
+const writeToFile = (fileName, data) => {
     fs.writeFile(fileName, data, err => {
         if(err) {
             console.log(err)
@@ -10,7 +11,7 @@ function writeToFile(fileName, data) {
     })
 }
 
-inquirer.prompt([{
+let questions = [{
     type: "input",
     message: "What is your GitHub username?",
     name: "username"
@@ -55,10 +56,17 @@ inquirer.prompt([{
     type:"input",
     message: "What does the user need to know about contributing to the repo?",
     name: "contribute"
-}]) 
-
+}]
+const init = () => {
+    inquirer.prompt(questions) 
+   
 .then(data => {
+    axios.get('https://api.github.com/users/' + data.username)
+        .then(response => {
+            console.log(response)
+        })
     writeToFile("generate.md", make.generateMarkdown(data))
 })
+}
 
-
+init();

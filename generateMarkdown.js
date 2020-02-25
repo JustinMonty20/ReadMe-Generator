@@ -4,6 +4,8 @@ function generateMarkdown(data) {
 
   ### ${data.description}
 
+  ![]("https://img.shields.io/badge/license-MIT-blue")
+
   # Table of Contents
   
   * [Installation](#installation)
@@ -40,6 +42,8 @@ function generateMarkdown(data) {
   # Contributing 
 
   ${data.contribute}
+
+ ![]()
   `;
   }
   

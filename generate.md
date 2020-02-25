@@ -1,7 +1,9 @@
 
-  # ReadMe Maker
+  # nothing
 
-  ### it creates a  readme based on what the user answers to these questions
+  ### nothing
+
+  ![]("https://img.shields.io/badge/license-MIT-blue")
 
   # Table of Contents
   
@@ -30,13 +32,15 @@
 
   # Usage
 
-  nothing
+  
 
   # License
 
-  MIT
+  ISC
 
   # Contributing 
 
-  nothing
+  
+
+ ![]()
   
