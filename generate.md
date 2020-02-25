@@ -1,42 +1,42 @@
 
-  #Read-Me Maker
+  # ReadMe Maker
 
-  ###makes a readme based on the users answers to these questions
+  ### it creates a  readme based on what the user answers to these questions
 
   # Table of Contents
   
-  *[Installation](#installation)
+  * [Installation](#installation)
 
-  *[Tests](#tests)
+  * [Tests](#tests)
 
-  *[Usage](#usage)
+  * [Usage](#usage)
 
-  *[License](#license)
+  * [License](#license)
 
-  *[Contributing](#contributing)
+  * [Contributing](#contributing)
 
-  
-  #Installation 
+
+  # Installation 
 
   To install necessary dependencies run the following command 
 
-  npm i
+  npm install
 
-  #Tests 
+  # Tests 
 
   To run tests, run the following command
 
   npm test
 
-  #Usage
+  # Usage
 
-  it rocks
+  nothing
 
-  #License
+  # License
 
-  GPLv3
+  MIT
 
-  #Contributing 
+  # Contributing 
 
-  contribute all you want
+  nothing
   
