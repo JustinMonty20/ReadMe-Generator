@@ -4,7 +4,7 @@ function generateMarkdown(data) {
 
   ### ${data.description}
 
-  ![]("https://img.shields.io/badge/license-MIT-blue")
+  ![](https://img.shields.io/badge/license-${data.license}-blue)
 
   # Table of Contents
   
