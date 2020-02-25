@@ -1,9 +1,9 @@
 
   # nothing
 
-  ### no
+  ### nope
 
-  ![](https://img.shields.io/badge/dynamic/json?url=<URL>&label=License&query=Apache 2.0&color=blue&prefix=<PREFIX>&suffix=<SUFFIX>)
+  ![](https://img.shields.io/license/MIT/apistatus.svg)
 
   # Table of Contents
   
@@ -32,15 +32,15 @@
 
   # Usage
 
-  not a thing
+  
 
   # License
 
-  Apache 2.0
+  MIT
 
   # Contributing 
 
-  lots
+  
 
  ![]()
   
