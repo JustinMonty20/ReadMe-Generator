@@ -1,5 +1,4 @@
 function generateMarkdown(data) {
-  console.log(data)
     return `
   # ${data.title}
 
@@ -44,8 +43,9 @@ function generateMarkdown(data) {
 
   ${data.contribute}
 
-  ![profile-image](${data.avatar_url}) 
-  This Read-Me was created by <a>${data.email}</a> reach out if you have any questions about this project. 
+  <img src = '${data.avatar_url}' width ='150' height='100' />
+
+  This Read-Me was created by <a href ='mailto:${data.email}'>${data.username}</a> reach out if you have any questions about this project. 
   `;
   }
   

@@ -1,9 +1,9 @@
 
-  # nothing
+  # Read-Me Generator
 
-  ### nope
+  ### it generates a readme based on the user answers to comman line questions
 
-  ![shield](https://img.shields.io/badge/license-BSD-blue)
+  ![shield](https://img.shields.io/badge/license-MIT-blue)
 
   # Table of Contents
   
@@ -32,16 +32,17 @@
 
   # Usage
 
-  not a thing
+  Nothing as of yet
 
   # License
 
-  BSD
+  MIT
 
   # Contributing 
 
-  contribute all you would like
+  Contribute all you would like
 
-  ![profile-image](https://avatars0.githubusercontent.com/u/54275962?v=4) 
-  This Read-Me was created by <a>justin.monty20@gmail.com</a> reach out if you have any questions about this project. 
+  <img src = 'https://avatars0.githubusercontent.com/u/54275962?v=4' width ='150' height='100' />
+
+  This Read-Me was created by <a href ='mailto:justin.monty20@gmail.com'>JustinMonty20</a> reach out if you have any questions about this project. 
   

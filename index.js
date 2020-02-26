@@ -3,11 +3,15 @@ const make = require("./generateMarkdown")
 const axios = require("axios")
 const fs = require("fs")
 
-const writeToFile = (fileName, data) => {
-    fs.writeFile(fileName, data, err => {
-        if(err) {
-            console.log(err)
-        } else console.log("YUP")
+const writeToFileAsync = (fileName, data) => {
+    return new Promise ((resolve, reject)=>{
+        fs.writeFile(fileName, data, err => {
+            if(err) {
+                return reject(err);
+            } 
+            resolve("Saving")
+        })
+
     })
 }
 
@@ -56,20 +60,13 @@ let questions = [{
     message: "What does the user need to know about contributing to the repo?",
     name: "contribute"
 }]
-const init = () => {
-    inquirer.prompt(questions) 
-   
+function init(){
+inquirer.prompt(questions) 
 .then(response => {
     axios.get('https://api.github.com/users/' + response.username)
         .then(({data}) => {
-           // console.log(response)
-            writeToFile("generate.md", make({...data, ...response}),err => { 
-                if(err) throw err
-                console.log('...saving')
-            })
-            
-        })
-})
-}
-
+            writeToFileAsync("generate.md", make({...data, ...response})
+            )})
+    }
+)}
 init();
